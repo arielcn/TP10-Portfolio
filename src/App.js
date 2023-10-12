@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FavoritoContext } from "./context/favoritoContext";
+import Creaciones from "./pages/Creaciones";
+import Favorito from "./pages/Favorito";
+import Home from "./pages/Home";
+import Layout from "./pages/Layout";
+import error404 from './error404.gif';
 
-function App() {
+const App = () => {
+  let fav = localStorage.getItem('favorito');
+  
+  const [favorito, setFavorito] = useState(fav ? JSON.parse(fav) : []);
+
+  useEffect(() => {
+    localStorage.setItem('favorito', JSON.stringify(favorito));
+  }, [favorito]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FavoritoContext.Provider value={{ favorito, setFavorito }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />}></Route>
+            <Route path="/mis-creaciones" element={<Creaciones />}></Route>
+            <Route path="/favorito" element={<Favorito />}></Route>
+            <Route path="*" element={
+              <div  className="text-center">
+                <h1 className="text-center mt-5">Page not found</h1>
+                <img src={error404} alt="my-gif" />
+              </div>
+            }></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </FavoritoContext.Provider>
   );
-}
+};
 
 export default App;
