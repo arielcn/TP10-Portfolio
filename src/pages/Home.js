@@ -3,7 +3,7 @@ import Contacto from "../components/Contacto";
 const Home = () => {
 
     return (
-        <html>
+        <html className="container mt-5">
             <body>
                 NEEEE
             </body>
