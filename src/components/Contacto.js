@@ -3,8 +3,8 @@ import React from 'react';
 const Contacto = () => {
 
     return (
-        <section>
-            <h1>Contacto</h1>
+        <section className='text-white'>
+            <h2>Contacto</h2>
             <form onSubmit={(e) => {
                 e.preventDefault()
             }}>
@@ -14,7 +14,7 @@ const Contacto = () => {
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                 </div>
                 <div className='col-sm-6'>
-                <label for="exampleFormControlInput2" class="form-label">Number</label>
+                <label for="exampleFormControlInput2" class="form-label">Numero</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej: +54 9 11..." />
                 </div>
             </div>
