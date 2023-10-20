@@ -2,6 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Badge } from "@mui/material";
 
 const Layout = () => {
     return (
@@ -15,9 +16,12 @@ const Layout = () => {
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/mis-creaciones">Mis Creaciones</Nav.Link>
-                            <Nav.Link as={Link} to="/favoritos">Contacto</Nav.Link>
                         </Nav>
-                        <Nav.Link as={Link} to="/favorito" className="float-end"><ion-icon name="star-outline" size='large'></ion-icon></Nav.Link>
+                        <Nav.Link as={Link} to="/favorito" className="float-end">
+                            <Badge badgeContent={4} color="primary">
+                                <ion-icon name="star-outline" size='large'></ion-icon>
+                            </Badge>
+                            </Nav.Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
