@@ -6,6 +6,7 @@ import Favorito from "./pages/Favorito";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import error404 from './error404.gif';
+import Proyecto from "./pages/Proyecto";
 
 const App = () => {
   let fav = localStorage.getItem('favorito');
@@ -24,6 +25,7 @@ const App = () => {
             <Route index element={<Home />}></Route>
             <Route path="/mis-creaciones" element={<Creaciones />}></Route>
             <Route path="/favorito" element={<Favorito />}></Route>
+            <Route path="/proyecto" element={<Proyecto />}></Route>
             <Route path="*" element={
               <div  className="text-center">
                 <h1 className="text-center mt-5">Page not found</h1>

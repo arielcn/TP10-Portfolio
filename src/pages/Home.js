@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Contacto from "../components/Contacto";
 import axios from "axios";
 import './Home.css'
@@ -32,7 +33,7 @@ const Home = () => {
                     <div class="card-body">
                         <h5 class="card-title">{proyRandom.Titulo}</h5>
                         <p class="card-text">{proyRandom.Desc}</p>
-                        <a href="#" class="btn btn-primary">Ir al proyecto</a>
+                        <Link as={Link} to="/proyecto" class="btn btn-primary">Ir al proyecto</Link>
                     </div>
                 </div>
             </section>
@@ -46,7 +47,7 @@ const Home = () => {
                 <p><em>Fecha de publicación: 27/07/2014</em></p>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, turpis id finibus ultrices, felis dolor mattis tortor, in interdum dolor ex eu ante. Proin quis accumsan risus. Donec semper tortor libero, elementum ultricies justo congue quis. Nam at neque et metus porttitor tempus. Pellentesque venenatis elit vel eros pulvinar, eu finibus sem vestibulum. Sed tristique neque elit, a porttitor sem convallis sit amet. Cras sit amet enim non justo pretium mollis. Vivamus at tellus id eros molestie tempus. Cras augue nisl, feugiat eget dignissim non, porttitor sit amet ante.</p>
-                <img width='80%' src="https://flag-creator.com/wp-content/uploads/2023/10/cropped-Flag-Creator-Maker-Generator-Design-scaled-1-1024x538.jpg"></img>
+                <img width='80%' src="https://flag-creator.com/wp-content/uploads/2023/10/cropped-Flag-Creator-Maker-Generator-Design-scaled-1-1024x538.jpg" alt="img+"></img>
                 </div>
             </section>
 
