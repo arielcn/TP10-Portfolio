@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Contacto from "../components/Contacto";
 import axios from "axios";
 import './Home.css'
+import { Button } from "react-bootstrap";
 
 const Home = () => {
     const [proyectos, setProyectos] = useState([]);
@@ -33,7 +34,7 @@ const Home = () => {
                     <div class="card-body">
                         <h5 class="card-title">{proyRandom.Titulo}</h5>
                         <p class="card-text">{proyRandom.Desc}</p>
-                        <Link as={Link} to="/proyecto" class="btn btn-primary">Ir al proyecto</Link>
+                        <Button as={Link} to={'/proyecto/' + proyRandom.Id} className='me-1'>Ir al proyecto</Button>
                     </div>
                 </div>
             </section>
