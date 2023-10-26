@@ -25,14 +25,14 @@ const App = () => {
             <Route index element={<Home />}></Route>
             <Route path="/mis-creaciones" element={<Creaciones />}></Route>
             <Route path="/favorito" element={<Favorito />}></Route>
-            <Route path="/proyecto" element={<Proyecto />}></Route>
+            <Route path="/proyecto/:proyId" element={<Proyecto />}></Route>
+          </Route>
             <Route path="*" element={
               <div  className="text-center">
-                <h1 className="text-center mt-5">Page not found</h1>
+                <h1 className="mt-5 text-white display-1">Page not found</h1>
                 <img src={error404} alt="my-gif" />
               </div>
             }></Route>
-          </Route>
         </Routes>
       </BrowserRouter>
     </FavoritoContext.Provider>

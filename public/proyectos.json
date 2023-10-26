@@ -5,27 +5,31 @@
             "Titulo": "Validaciones",
             "Desc": "Las mejores validaciones",
             "FechaCreacion": "16-03-2023",
-            "Link": "-"
+            "Imagen": "https://vita-activa.org/wp-content/uploads/2020/12/Validacion-Vita-1024x564.png",
+            "Link": "https://github.com/arielcn/"
         },
         {
             "Id": 2,
             "Titulo": "To-Do",
             "Desc": "La mejor lista To-Do",
             "FechaCreacion": "26-04-2023",
-            "Link": "-"
+            "Imagen": "https://tichung.com/blog/2021/20200323_flask/feature.png",
+            "Link": "https://github.com/arielcn/"
         },
         {
             "Id": 3,
             "Titulo": "Productos",
             "Desc": "La mejor tienda de toda la web",
             "FechaCreacion": "03-05-2023",
-            "Link": "-"
+            "Imagen": "https://cholilaonline.ar/wp-content/uploads/2021/05/1588268281_754440_1588268433_noticia_normal.jpg",
+            "Link": "https://github.com/arielcn/"
         },
         {
             "Id": 4,
             "Titulo": "Citas pt. 1",
             "Desc": "La mejor app para agendar citas en tu emprendimiento!",
             "FechaCreacion": "25-05-2023",
+            "Imagen": "https://www.eltiempo.com/files/article_content/uploads/2020/12/28/5fea3bacacf5a.jpeg",
             "Link": "https://github.com/arielcn/TP4_Citas.git"
         },
         {
@@ -33,6 +37,7 @@
             "Titulo": "Citas pt. 2",
             "Desc": "La mejor app de citas mejorada!",
             "FechaCreacion": "01-06-2023",
+            "Imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYLyW9N3eumAOrkk4CYhvddW_mRjj1CWyqEU02uu0GOdOtDEe9I5nqQrJ1xEgc07z2bjg&usqp=CAU",
             "Link": "https://github.com/arielcn/TP4_Citas.git"
         },
         {
@@ -40,6 +45,7 @@
             "Titulo": "Banderas",
             "Desc": "Todas las banderas del mundo.",
             "FechaCreacion": "22-06-2023",
+            "Imagen": "https://elordenmundial.com/wp-content/uploads/2016/01/banderas-mundo-historia.png",
             "Link": "https://github.com/arielcn/TP6Banderas"
         },
         {
@@ -47,6 +53,7 @@
             "Titulo": "Productos v2",
             "Desc": "La mejor pagina de ventas mejorada!",
             "FechaCreacion": "03-08-2023",
+            "Imagen": "https://thelogisticsworld.com/wp-content/uploads/2023/02/2023-02-13T213252Z_1_LYNXMPEJ1C0XJ_RTROPTP_4_AMAZON-COM-RESULTS-1-828x548.jpg",
             "Link": "https://github.com/arielcn/TP7-ProductosV2.git"
         },
         {
@@ -54,6 +61,7 @@
             "Titulo": "Carrito",
             "Desc": "Carrito agregado a la pagina de productos! 😎",
             "FechaCreacion": "01-06-2023",
+            "Imagen": "https://http2.mlstatic.com/D_NQ_NP_751105-MLA31029782685_062019-O.webp",
             "Link": "https://github.com/arielcn/TP7-ProductosV2.git"
         }
     ]
