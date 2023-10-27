@@ -63,6 +63,14 @@
             "FechaCreacion": "01-06-2023",
             "Imagen": "https://http2.mlstatic.com/D_NQ_NP_751105-MLA31029782685_062019-O.webp",
             "Link": "https://github.com/arielcn/TP7-ProductosV2.git"
+        },
+        {
+            "Id": 9,
+            "Titulo": "MarCo",
+            "Desc": "Con la CRM de MarCo vas a tener las mejores herramientas para gestionar tu empresa y a todos tus empleados.",
+            "FechaCreacion": "01-03-2023",
+            "Imagen": "https://snov.io/blog/wp-content/uploads/2021/02/2jT2rNPfndRmSJ9SOdn9VFEchk8AEKpSGvPPM1Xu-1-1-1536x768.png",
+            "Link": "https://github.com/arielcn/MarcoCRM-Front"
         }
     ]
 }
