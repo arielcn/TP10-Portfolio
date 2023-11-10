@@ -3,8 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Badge } from "@mui/material";
+import { useContext } from "react";
+import { FavoritoContext } from "../context/favoritoContext";
 
 const Layout = () => {
+    const {favorito} = useContext(FavoritoContext);
+
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary">
@@ -18,7 +22,7 @@ const Layout = () => {
                             <Nav.Link as={Link} to="/mis-creaciones">Mis Creaciones</Nav.Link>
                         </Nav>
                         <Nav.Link as={Link} to="/favorito" className="float-end">
-                            <Badge badgeContent={4} color="primary">
+                            <Badge badgeContent={favorito.length} color="primary">
                                 <ion-icon name="star-outline" size='large'></ion-icon>
                             </Badge>
                             </Nav.Link>
