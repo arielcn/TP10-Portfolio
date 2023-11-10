@@ -15,6 +15,7 @@ const Proyecto = () => {
 
     return (
         <div class="container mt-5 text-center">
+            <img src={proyecto.Imagen} width='50%' alt="img-proy"></img>
             <h1 class="card-title">{proyecto.Titulo}</h1>
             <p class="card-text">{proyecto.Desc}</p>
             <p>Link del proyecto: <a href={proyecto.Link} rel="noreferrer" target='_blank'>Click Aquí</a></p>
