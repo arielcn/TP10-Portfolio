@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap";
 
 const Home = () => {
     const [proyectos, setProyectos] = useState([]);
-    const [proyRandom, setProyRandom] = useState({});
+    const [proyRandom, setProyRandom] = useState();
 
     useEffect(() => {
         axios.get('proyectos.json')
@@ -29,14 +29,13 @@ const Home = () => {
                     <h1 className="text-white">¡Un proyecto al azar!</h1>
                     <button className="btn btn-primary btn-lg" onClick={() => { setProyRandom(proyectos[randomNumberInRange(1, proyectos.length - 1)]) }}>Click Aquí</button>
                 </div>
-
-                <div class="card w-25 text-center">
+                { proyRandom ?  <div class="card w-25 text-center">
                     <div class="card-body">
                         <h5 class="card-title">{proyRandom.Titulo}</h5>
                         <p class="card-text">{proyRandom.Desc}</p>
                         <Button as={Link} to={'/proyecto/' + proyRandom.Id} className='me-1'>Ir al proyecto</Button>
                     </div>
-                </div>
+                </div>: <></> }
             </section>
             
             <hr className="text-white" />
